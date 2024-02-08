@@ -25,7 +25,7 @@ function App() {
       const messageList = document.querySelector(".messageBox");
 
       messageList.innerHTML += `<p>${message}</p>`;
-      const res = await fetch("http://localhost:3000/api/message", {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_SITE}/api/message`, {
          cache: "no-store",
          method: "POST",
          body: JSON.stringify({ message }),
