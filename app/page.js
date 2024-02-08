@@ -4,7 +4,8 @@ import { io } from "socket.io-client";
 import "./globals.css";
 
 function App() {
-   const socket = io("http://localhost:4000");
+   // const socket = io("http://localhost:4000");
+   const socket = io("https://server-socket-k10p.onrender.com/");
 
    useEffect(() => {
       socket.on("connect", () => {
