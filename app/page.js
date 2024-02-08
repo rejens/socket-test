@@ -40,10 +40,13 @@ function App() {
       <div className="App">
          <div className="messageBox"></div>
          <br />
-         message: <input type="text" className="message" />
-         <button className="send" onClick={handleClick}>
-            send
-         </button>
+         <div className="w-fit mx-auto">
+            message:{" "}
+            <input type="text" className="message border border-black " />
+            <button className="send" onClick={handleClick}>
+               send
+            </button>
+         </div>
       </div>
    );
 }
